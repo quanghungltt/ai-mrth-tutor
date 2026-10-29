@@ -1,0 +1,798 @@
+[
+  {
+    "id": "TC-01",
+    "group": "A",
+    "name": "PT cơ bản đúng",
+    "problemText": "3x - 6 = 9",
+    "steps": [
+      "3x = 15",
+      "x = 5"
+    ],
+    "expectedFirstError": null,
+    "statusHttp": 200,
+    "data": {
+      "status": "completed",
+      "firstErrorStepIndex": null,
+      "steps": [
+        {
+          "index": 0,
+          "status": "valid",
+          "explanation": "Học sinh đã thực hiện chuyển vế -6 sang vế phải và đổi dấu thành +6, kết quả 3x = 15 là chính xác."
+        },
+        {
+          "index": 1,
+          "status": "valid",
+          "explanation": "Học sinh đã thực hiện phép chia cả hai vế cho 3, kết quả x = 5 là chính xác."
+        }
+      ],
+      "errorCategory": null,
+      "hints": [
+        "Con hãy kiểm tra lại xem mình đã thực hiện các phép tính cộng và chia đúng với quy tắc chuyển vế chưa nhé?",
+        "Khi giải phương trình bậc nhất một ẩn, ta cần đưa các số hạng tự do sang một vế và các số hạng chứa ẩn sang vế còn lại, sau đó chia cho hệ số của x.",
+        "Kết quả của em đã rất chính xác rồi, hãy thử thay x = 5 vào phương trình ban đầu để kiểm tra lại xem 3 nhân 5 trừ 6 có đúng bằng 9 không nhé!"
+      ],
+      "verificationStatus": "verified",
+      "verificationNotes": [
+        "Bộ kiểm chứng đại số độc lập xác nhận tất cả các bước đều bảo toàn nghiệm đúng x = 5."
+      ],
+      "studentMessage": "Chào em, bài làm của em rất xuất sắc! Các bước biến đổi của em hoàn toàn chính xác và logic. Hãy tiếp tục giữ vững phong độ học tập tuyệt vời này nhé!"
+    }
+  },
+  {
+    "id": "TC-02",
+    "group": "A",
+    "name": "PT có ngoặc đúng",
+    "problemText": "2(x + 4) = 16",
+    "steps": [
+      "2x + 8 = 16",
+      "2x = 8",
+      "x = 4"
+    ],
+    "expectedFirstError": null,
+    "statusHttp": 200,
+    "data": {
+      "status": "completed",
+      "firstErrorStepIndex": null,
+      "steps": [
+        {
+          "index": 0,
+          "status": "valid",
+          "explanation": "Học sinh đã thực hiện đúng quy tắc phân phối nhân đơn thức với đa thức: 2 nhân x và 2 nhân 4."
+        },
+        {
+          "index": 1,
+          "status": "valid",
+          "explanation": "Học sinh đã thực hiện đúng quy tắc chuyển vế: 16 trừ 8 bằng 8."
+        },
+        {
+          "index": 2,
+          "status": "valid",
+          "explanation": "Học sinh đã thực hiện đúng quy tắc tìm thừa số chưa biết: 8 chia 2 bằng 4."
+        }
+      ],
+      "errorCategory": null,
+      "hints": [
+        "Con hãy thử thay giá trị x = 4 vào biểu thức ban đầu xem kết quả có đúng bằng 16 không nhé.",
+        "Khi giải phương trình, chúng ta luôn có thể kiểm tra lại kết quả bằng cách thay giá trị tìm được vào đề bài.",
+        "Bài làm của con đã rất chính xác rồi, con hãy tiếp tục giữ vững phong độ này trong các bài tập tiếp theo nhé!"
+      ],
+      "verificationStatus": "verified",
+      "verificationNotes": [
+        "Bộ kiểm chứng đại số độc lập xác nhận tất cả các bước đều bảo toàn nghiệm đúng x = 4."
+      ],
+      "studentMessage": "Chào con! Cô rất vui khi thấy con giải bài toán này một cách chính xác và logic. Con đã nắm rất vững các quy tắc về phân phối và chuyển vế. Hãy tiếp tục phát huy tinh thần học tập chăm chỉ này nhé!"
+    }
+  },
+  {
+    "id": "TC-03",
+    "group": "A",
+    "name": "PT có x ở 2 vế đúng",
+    "problemText": "5x - 3 = 2x + 9",
+    "steps": [
+      "3x - 3 = 9",
+      "3x = 12",
+      "x = 4"
+    ],
+    "expectedFirstError": null,
+    "statusHttp": 200,
+    "data": {
+      "status": "completed",
+      "firstErrorStepIndex": null,
+      "steps": [
+        {
+          "index": 0,
+          "status": "valid",
+          "explanation": "Học sinh đã thực hiện chuyển hạng tử 2x từ vế phải sang vế trái và thực hiện phép trừ 5x - 2x = 3x một cách chính xác."
+        },
+        {
+          "index": 1,
+          "status": "valid",
+          "explanation": "Học sinh đã chuyển hạng tử -3 từ vế trái sang vế phải và đổi dấu thành +3, thực hiện 9 + 3 = 12 chính xác."
+        },
+        {
+          "index": 2,
+          "status": "valid",
+          "explanation": "Học sinh đã thực hiện phép chia 12 cho 3 để tìm x, kết quả x = 4 là chính xác."
+        }
+      ],
+      "errorCategory": null,
+      "hints": [
+        "Con hãy kiểm tra lại xem mình đã thực hiện các phép tính cộng, trừ, nhân, chia ở từng bước một cách cẩn thận chưa nhé?",
+        "Khi giải phương trình bậc nhất một ẩn, quy tắc chuyển vế đổi dấu và quy tắc nhân chia hai vế cho cùng một số khác 0 là chìa khóa quan trọng.",
+        "Bài làm của con đã rất tốt và logic, con hãy thử thay giá trị x = 4 vào phương trình ban đầu để kiểm tra xem hai vế có bằng nhau không nhé!"
+      ],
+      "verificationStatus": "verified",
+      "verificationNotes": [
+        "Bộ kiểm chứng đại số độc lập xác nhận tất cả các bước đều bảo toàn nghiệm đúng x = 4."
+      ],
+      "studentMessage": "Chào con! Cô rất vui vì con đã giải bài toán này một cách chính xác và trình bày rất rõ ràng. Con đã nắm vững các quy tắc chuyển vế và giải phương trình rồi đấy. Hãy tiếp tục giữ vững phong độ này nhé!"
+    }
+  },
+  {
+    "id": "TC-04",
+    "group": "A",
+    "name": "Rút gọn biểu thức đúng",
+    "problemText": "Rút gọn A = 3(x - 2) + 4x",
+    "steps": [
+      "A = 3x - 6 + 4x",
+      "A = 7x - 6"
+    ],
+    "expectedFirstError": null,
+    "statusHttp": 200,
+    "data": {
+      "status": "completed",
+      "firstErrorStepIndex": null,
+      "steps": [
+        {
+          "index": 0,
+          "status": "valid",
+          "explanation": "Học sinh đã thực hiện đúng phép nhân phân phối 3 vào trong ngoặc (3 nhân x và 3 nhân -2)."
+        },
+        {
+          "index": 1,
+          "status": "valid",
+          "explanation": "Học sinh đã thực hiện đúng phép cộng các hạng tử đồng dạng (3x + 4x = 7x)."
+        }
+      ],
+      "errorCategory": null,
+      "hints": [
+        "Con hãy kiểm tra lại xem mình đã nhân số 3 với tất cả các hạng tử bên trong ngoặc chưa nhé?",
+        "Khi nhân một số với một biểu thức trong ngoặc, ta cần áp dụng tính chất phân phối: a(b - c) = ab - ac.",
+        "Kết quả của em đã rất chính xác rồi, hãy tiếp tục phát huy tinh thần học tập này nhé!"
+      ],
+      "verificationStatus": "unverified",
+      "verificationNotes": [
+        "Phân tích do AI đề xuất, chưa được kiểm chứng toán học độc lập."
+      ],
+      "studentMessage": "Chào em, cô rất vui khi thấy em làm bài rất cẩn thận và chính xác. Các bước biến đổi của em hoàn toàn đúng quy tắc. Hãy giữ vững phong độ này nhé!"
+    }
+  },
+  {
+    "id": "TC-05",
+    "group": "B",
+    "name": "Quên nhân số thứ 2 trong ngoặc",
+    "problemText": "2(x + 3) = 14",
+    "steps": [
+      "2x + 3 = 14",
+      "2x = 11",
+      "x = 11/2"
+    ],
+    "expectedFirstError": 0,
+    "statusHttp": 200,
+    "data": {
+      "status": "uncertain",
+      "firstErrorStepIndex": 0,
+      "steps": [
+        {
+          "index": 0,
+          "status": "original_error",
+          "explanation": "Học sinh quên nhân số 2 với số 3 khi thực hiện phép nhân phân phối (2 * 3 phải bằng 6)."
+        },
+        {
+          "index": 1,
+          "status": "consequential",
+          "explanation": "Học sinh thực hiện phép trừ 14 - 3 dựa trên kết quả sai từ bước trước."
+        },
+        {
+          "index": 2,
+          "status": "consequential",
+          "explanation": "Học sinh thực hiện phép chia 11 cho 2 dựa trên kết quả sai từ bước trước."
+        }
+      ],
+      "errorCategory": "Sai quy tắc phân phối",
+      "hints": [
+        "Con hãy kiểm tra lại xem khi nhân số 2 vào trong ngoặc (x + 3), con đã nhân cho cả hai số hạng bên trong chưa?",
+        "Khi nhân một số với một tổng, ta cần áp dụng tính chất phân phối: a(b + c) = a*b + a*c.",
+        "Hãy thử tính lại 2 nhân với 3 bằng bao nhiêu, sau đó viết lại phương trình mới và thực hiện chuyển vế nhé."
+      ],
+      "verificationStatus": "verified",
+      "verificationNotes": [
+        "Bộ kiểm chứng đại số độc lập xác nhận nghiệm đúng của phương trình gốc là x = 4.",
+        "Tập nghiệm bị thay đổi tại Bước 1 (nghiệm biến thành 5.5)."
+      ],
+      "studentMessage": "Chào em, bài làm của em có một chút nhầm lẫn nhỏ ở bước đầu tiên thôi. Em đã nắm được cách chuyển vế rồi, chỉ cần chú ý nhân số ở ngoài ngoặc cho tất cả các số hạng bên trong là sẽ làm đúng ngay. Cố gắng lên nhé!"
+    }
+  },
+  {
+    "id": "TC-06",
+    "group": "B",
+    "name": "Quên đổi dấu khi bỏ ngoặc trừ",
+    "problemText": "Rút gọn 5 - (2x - 3)",
+    "steps": [
+      "5 - 2x - 3",
+      "2 - 2x"
+    ],
+    "expectedFirstError": 0,
+    "statusHttp": 200,
+    "data": {
+      "status": "uncertain",
+      "firstErrorStepIndex": 0,
+      "steps": [
+        {
+          "index": 0,
+          "status": "original_error",
+          "explanation": "Khi bỏ dấu ngoặc có dấu trừ đằng trước, học sinh quên đổi dấu các hạng tử bên trong ngoặc. -(-3) phải bằng +3."
+        },
+        {
+          "index": 1,
+          "status": "consequential",
+          "explanation": "Học sinh thực hiện phép tính 5 - 3 = 2 dựa trên kết quả sai từ bước trước."
+        }
+      ],
+      "errorCategory": "Sai quy tắc bỏ dấu ngoặc",
+      "hints": [
+        "Con hãy kiểm tra lại quy tắc bỏ dấu ngoặc khi phía trước có dấu trừ nhé.",
+        "Khi bỏ dấu ngoặc có dấu trừ đằng trước, ta phải đổi dấu tất cả các hạng tử bên trong ngoặc: -(a - b) = -a + b.",
+        "Hãy thử đổi dấu số -3 thành +3 trong biểu thức 5 - (2x - 3) rồi mới thực hiện rút gọn các số hạng tự do nhé."
+      ],
+      "verificationStatus": "unverified",
+      "verificationNotes": [
+        "Phân tích do AI đề xuất, chưa được kiểm chứng toán học độc lập."
+      ],
+      "studentMessage": "Chào em! Bài làm của em có một lỗi nhỏ ở bước bỏ dấu ngoặc thôi. Đây là lỗi rất phổ biến, chỉ cần em chú ý đổi dấu các số hạng bên trong khi trước ngoặc là dấu trừ là sẽ làm đúng ngay. Cố gắng lên nhé!"
+    }
+  },
+  {
+    "id": "TC-07",
+    "group": "B",
+    "name": "Nhân phân phối với hệ số âm",
+    "problemText": "-3(x - 4) = 15",
+    "steps": [
+      "-3x - 12 = 15",
+      "-3x = 27",
+      "x = -9"
+    ],
+    "expectedFirstError": 0,
+    "statusHttp": 200,
+    "data": {
+      "status": "uncertain",
+      "firstErrorStepIndex": 0,
+      "steps": [
+        {
+          "index": 0,
+          "status": "original_error",
+          "explanation": "Khi nhân phân phối -3 vào biểu thức (x - 4), học sinh quên quy tắc nhân hai số âm (-3 nhân -4 phải bằng +12, không phải -12)."
+        },
+        {
+          "index": 1,
+          "status": "consequential",
+          "explanation": "Học sinh đã thực hiện chuyển vế -12 thành +12 một cách logic từ phương trình sai ở bước trước (-3x - 12 = 15 dẫn đến -3x = 27)."
+        },
+        {
+          "index": 2,
+          "status": "consequential",
+          "explanation": "Phép chia 27 cho -3 được thực hiện đúng theo phương trình sai ở bước trước."
+        }
+      ],
+      "errorCategory": "Sai dấu khi nhân phân phối",
+      "hints": [
+        "Con hãy kiểm tra lại phép nhân phân phối số -3 vào trong ngoặc (x - 4), đặc biệt chú ý đến dấu của số hạng thứ hai nhé.",
+        "Quy tắc nhân một số âm với một số âm sẽ cho kết quả là một số dương, con hãy áp dụng vào biểu thức -3 nhân -4 xem sao.",
+        "Thử nhân lại -3 với từng số hạng trong ngoặc rồi viết lại phương trình, sau đó con thực hiện chuyển vế và chia như bình thường nhé."
+      ],
+      "verificationStatus": "verified",
+      "verificationNotes": [
+        "Bộ kiểm chứng đại số độc lập xác nhận nghiệm đúng của phương trình gốc là x = -1.",
+        "Tập nghiệm bị thay đổi tại Bước 1 (nghiệm biến thành -9)."
+      ],
+      "studentMessage": "Chào con! Bài làm của con có tư duy rất tốt về các bước giải phương trình. Tuy nhiên, có một chút nhầm lẫn nhỏ về dấu khi nhân phân phối ở bước đầu tiên thôi. Con hãy kiểm tra lại kỹ phần đó nhé, thầy tin con sẽ sửa được ngay!"
+    }
+  },
+  {
+    "id": "TC-08",
+    "group": "B",
+    "name": "Bỏ ngoặc lồng nhau sai dấu",
+    "problemText": "10 - (x + 3 - 2x) = 5",
+    "steps": [
+      "10 - (-x + 3) = 5",
+      "10 + x + 3 = 5",
+      "x + 13 = 5",
+      "x = -8"
+    ],
+    "expectedFirstError": 1,
+    "statusHttp": 200,
+    "data": {
+      "status": "uncertain",
+      "firstErrorStepIndex": 0,
+      "steps": [
+        {
+          "index": 0,
+          "status": "original_error",
+          "explanation": "Học sinh thực hiện phép tính trong ngoặc x + 3 - 2x thành -x + 3 là đúng, nhưng bước này đã làm thay đổi cấu trúc biểu thức một cách không cần thiết và dẫn đến sai lầm ở bước sau."
+        },
+        {
+          "index": 1,
+          "status": "consequential",
+          "explanation": "Khi bỏ ngoặc có dấu trừ đằng trước, học sinh đã quên đổi dấu số hạng 3 thành -3, dẫn đến 10 + x + 3 thay vì 10 + x - 3."
+        },
+        {
+          "index": 2,
+          "status": "consequential",
+          "explanation": "Phép cộng 10 + 3 = 13 là đúng dựa trên biểu thức sai ở bước trước."
+        },
+        {
+          "index": 3,
+          "status": "consequential",
+          "explanation": "Phép chuyển vế 5 - 13 = -8 là đúng dựa trên phương trình sai ở bước trước."
+        }
+      ],
+      "errorCategory": "Sai quy tắc bỏ dấu ngoặc",
+      "hints": [
+        "Con hãy kiểm tra lại quy tắc bỏ dấu ngoặc khi phía trước ngoặc có dấu trừ, các số hạng bên trong ngoặc sẽ thay đổi như thế nào?",
+        "Khi bỏ dấu ngoặc có dấu trừ đằng trước, ta phải đổi dấu tất cả các số hạng bên trong: dấu cộng thành dấu trừ và dấu trừ thành dấu cộng.",
+        "Con hãy thử giữ nguyên biểu thức 10 - (x + 3 - 2x) = 5 và thực hiện đổi dấu từng số hạng bên trong ngoặc khi bỏ ngoặc nhé."
+      ],
+      "verificationStatus": "unverified",
+      "verificationNotes": [
+        "Phân tích do AI đề xuất, chưa được kiểm chứng toán học độc lập."
+      ],
+      "studentMessage": "Chào em! Bài toán này rất thú vị. Em đã làm rất tốt các bước tính toán, tuy nhiên có một chút nhầm lẫn nhỏ ở quy tắc bỏ dấu ngoặc. Chỉ cần chú ý đổi dấu các số hạng bên trong là em sẽ giải đúng ngay thôi. Cố gắng lên nhé!"
+    }
+  },
+  {
+    "id": "TC-09",
+    "group": "C",
+    "name": "Chuyển vế không đổi dấu",
+    "problemText": "x - 7 = 5",
+    "steps": [
+      "x = 5 - 7",
+      "x = -2"
+    ],
+    "expectedFirstError": 0,
+    "statusHttp": 200,
+    "data": {
+      "status": "uncertain",
+      "firstErrorStepIndex": 0,
+      "steps": [
+        {
+          "index": 0,
+          "status": "original_error",
+          "explanation": "Học sinh thực hiện chuyển vế số -7 từ vế trái sang vế phải nhưng quên đổi dấu thành +7."
+        },
+        {
+          "index": 1,
+          "status": "consequential",
+          "explanation": "Kết quả x = -2 là hệ quả logic từ phép tính sai ở bước trước (5 - 7)."
+        }
+      ],
+      "errorCategory": "Sai quy tắc chuyển vế",
+      "hints": [
+        "Con hãy kiểm tra lại quy tắc chuyển vế khi đưa một số hạng từ vế này sang vế kia của phương trình nhé.",
+        "Khi chuyển một số hạng từ vế này sang vế kia, ta phải đổi dấu số hạng đó: dấu cộng thành dấu trừ và dấu trừ thành dấu cộng.",
+        "Thử thực hiện lại phép tính x = 5 + 7 xem kết quả sẽ là bao nhiêu nhé!"
+      ],
+      "verificationStatus": "verified",
+      "verificationNotes": [
+        "Bộ kiểm chứng đại số độc lập xác nhận nghiệm đúng của phương trình gốc là x = 12.",
+        "Tập nghiệm bị thay đổi tại Bước 1 (nghiệm biến thành -2)."
+      ],
+      "studentMessage": "Chào em, bài toán này rất gần với đáp án đúng rồi! Em chỉ cần chú ý một chút đến quy tắc đổi dấu khi chuyển vế là sẽ làm tốt ngay thôi. Cố gắng lên nhé!"
+    }
+  },
+  {
+    "id": "TC-10",
+    "group": "C",
+    "name": "Chuyển vế đổi dấu sai vế phải",
+    "problemText": "2x + 5 = 11",
+    "steps": [
+      "2x = 11 + 5",
+      "2x = 16",
+      "x = 8"
+    ],
+    "expectedFirstError": 0,
+    "statusHttp": 200,
+    "data": {
+      "status": "uncertain",
+      "firstErrorStepIndex": 0,
+      "steps": [
+        {
+          "index": 0,
+          "status": "original_error",
+          "explanation": "Học sinh thực hiện chuyển vế số 5 từ vế trái sang vế phải nhưng quên đổi dấu từ cộng thành trừ."
+        },
+        {
+          "index": 1,
+          "status": "consequential",
+          "explanation": "Kết quả 16 được tính toán dựa trên phép cộng sai ở bước trước đó."
+        },
+        {
+          "index": 2,
+          "status": "consequential",
+          "explanation": "Giá trị x = 8 là hệ quả của việc chia 16 cho 2 từ phương trình sai ở bước 2."
+        }
+      ],
+      "errorCategory": "Sai quy tắc chuyển vế",
+      "hints": [
+        "Con hãy kiểm tra lại quy tắc chuyển vế khi đưa một số hạng từ vế này sang vế kia của phương trình nhé.",
+        "Khi chuyển một số hạng từ vế này sang vế kia, ta phải đổi dấu số hạng đó: dấu cộng thành dấu trừ và ngược lại.",
+        "Thử thực hiện lại phép tính 11 trừ đi 5 thay vì cộng, sau đó tìm x từ kết quả mới đó xem sao nhé!"
+      ],
+      "verificationStatus": "verified",
+      "verificationNotes": [
+        "Bộ kiểm chứng đại số độc lập xác nhận nghiệm đúng của phương trình gốc là x = 3.",
+        "Tập nghiệm bị thay đổi tại Bước 1 (nghiệm biến thành 8)."
+      ],
+      "studentMessage": "Chào em! Bài toán này em đã nắm được quy trình giải phương trình rồi, chỉ cần chú ý một chút đến quy tắc đổi dấu khi chuyển vế là sẽ chính xác ngay. Cố gắng lên nhé, em làm rất tốt!"
+    }
+  },
+  {
+    "id": "TC-11",
+    "group": "C",
+    "name": "Chia hệ số biến thành nhân",
+    "problemText": "4x = 20",
+    "steps": [
+      "x = 20 * 4",
+      "x = 80"
+    ],
+    "expectedFirstError": 0,
+    "statusHttp": 200,
+    "data": {
+      "status": "uncertain",
+      "firstErrorStepIndex": 0,
+      "steps": [
+        {
+          "index": 0,
+          "status": "original_error",
+          "explanation": "Học sinh thực hiện phép nhân thay vì phép chia khi giải phương trình dạng ax = b. Để tìm x, ta cần chia cả hai vế cho 4 thay vì nhân."
+        },
+        {
+          "index": 1,
+          "status": "consequential",
+          "explanation": "Kết quả này là hệ quả trực tiếp từ phép tính sai ở bước trước đó."
+        }
+      ],
+      "errorCategory": "Sai quy tắc giải phương trình bậc nhất",
+      "hints": [
+        "Con hãy nhìn lại mối quan hệ giữa 4 và x trong phương trình 4x = 20, liệu phép tính ngược lại của nhân là gì nhỉ?",
+        "Để tìm thừa số chưa biết trong một tích, ta lấy tích chia cho thừa số đã biết.",
+        "Thay vì nhân 20 với 4, con hãy thử lấy 20 chia cho 4 để tìm giá trị của x nhé."
+      ],
+      "verificationStatus": "verified",
+      "verificationNotes": [
+        "Bộ kiểm chứng đại số độc lập xác nhận nghiệm đúng của phương trình gốc là x = 5.",
+        "Tập nghiệm bị thay đổi tại Bước 1 (nghiệm biến thành 20)."
+      ],
+      "studentMessage": "Chào con! Bài toán này rất đơn giản, chỉ cần con chú ý một chút đến quy tắc chuyển vế và phép tính ngược là sẽ làm đúng ngay. Cố gắng lên nhé, thầy/cô tin con sẽ làm được!"
+    }
+  },
+  {
+    "id": "TC-12",
+    "group": "C",
+    "name": "Chia hệ số âm quên đổi dấu",
+    "problemText": "-5x = 25",
+    "steps": [
+      "x = 25 / 5",
+      "x = 5"
+    ],
+    "expectedFirstError": 0,
+    "statusHttp": 200,
+    "data": {
+      "status": "uncertain",
+      "firstErrorStepIndex": 0,
+      "steps": [
+        {
+          "index": 0,
+          "status": "original_error",
+          "explanation": "Học sinh đã quên quy tắc đổi dấu khi chia cả hai vế cho một số âm. Khi chia -5x cho -5, vế phải cũng phải chia cho -5."
+        },
+        {
+          "index": 1,
+          "status": "consequential",
+          "explanation": "Kết quả này là hệ quả trực tiếp từ phép tính sai ở bước trước."
+        }
+      ],
+      "errorCategory": "Sai dấu khi chia hai vế cho số âm",
+      "hints": [
+        "Con hãy kiểm tra lại xem, khi ta chia cả hai vế của phương trình cho -5, thì số 25 sẽ thay đổi như thế nào nhỉ?",
+        "Quy tắc toán học là: Nếu a * x = b (với a khác 0), thì x = b / a. Ở đây a = -5, con hãy chú ý đến dấu của số a nhé.",
+        "Con thử thực hiện lại phép tính 25 chia cho -5 xem kết quả là số dương hay số âm nhé."
+      ],
+      "verificationStatus": "verified",
+      "verificationNotes": [
+        "Bộ kiểm chứng đại số độc lập xác nhận nghiệm đúng của phương trình gốc là x = -5.",
+        "Tập nghiệm bị thay đổi tại Bước 1 (nghiệm biến thành 25)."
+      ],
+      "studentMessage": "Chào con! Bài toán này con đã nắm được phương pháp giải phương trình cơ bản rồi, chỉ là một chút nhầm lẫn nhỏ về dấu thôi. Con hãy kiểm tra lại phép chia cho số âm nhé, cố gắng lên nào!"
+    }
+  },
+  {
+    "id": "TC-13",
+    "group": "D",
+    "name": "Lỗi gốc bước 1 kéo theo 2 bước sau",
+    "problemText": "3(x - 1) = 12",
+    "steps": [
+      "3x - 1 = 12",
+      "3x = 13",
+      "x = 13/3"
+    ],
+    "expectedFirstError": 0,
+    "statusHttp": 200,
+    "data": {
+      "status": "uncertain",
+      "firstErrorStepIndex": 0,
+      "steps": [
+        {
+          "index": 0,
+          "status": "original_error",
+          "explanation": "Học sinh quên nhân số 3 với số -1 khi thực hiện phép nhân phân phối vào trong ngoặc."
+        },
+        {
+          "index": 1,
+          "status": "consequential",
+          "explanation": "Học sinh thực hiện chuyển vế -1 thành +1 một cách logic dựa trên phương trình sai ở bước trước."
+        },
+        {
+          "index": 2,
+          "status": "consequential",
+          "explanation": "Học sinh thực hiện phép chia 13 cho 3 một cách logic dựa trên phương trình sai ở bước trước."
+        }
+      ],
+      "errorCategory": "Sai quy tắc nhân phân phối",
+      "hints": [
+        "Con hãy kiểm tra lại xem khi nhân số 3 vào trong ngoặc (x - 1), con đã nhân cho cả hai số hạng bên trong chưa?",
+        "Khi nhân một số với một biểu thức trong ngoặc, ta cần áp dụng tính chất phân phối: a(b - c) = a*b - a*c.",
+        "Thử nhân lại số 3 với cả x và -1, sau đó viết lại phương trình mới rồi thực hiện chuyển vế và tìm x nhé!"
+      ],
+      "verificationStatus": "verified",
+      "verificationNotes": [
+        "Bộ kiểm chứng đại số độc lập xác nhận nghiệm đúng của phương trình gốc là x = 5.",
+        "Tập nghiệm bị thay đổi tại Bước 1 (nghiệm biến thành 4.333333333333333)."
+      ],
+      "studentMessage": "Chào em! Bài làm của em có ý tưởng rất tốt và trình bày rõ ràng. Tuy nhiên, có một chút nhầm lẫn nhỏ ở bước đầu tiên khi nhân phân phối. Em hãy thử kiểm tra lại phép tính đó nhé, thầy tin là em sẽ sửa được ngay thôi!"
+    }
+  },
+  {
+    "id": "TC-14",
+    "group": "D",
+    "name": "Lỗi gốc bước 2 kéo theo bước 3",
+    "problemText": "4(x + 2) = 24",
+    "steps": [
+      "4x + 8 = 24",
+      "4x = 32",
+      "x = 8"
+    ],
+    "expectedFirstError": 1,
+    "statusHttp": 200,
+    "data": {
+      "status": "uncertain",
+      "firstErrorStepIndex": 1,
+      "steps": [
+        {
+          "index": 0,
+          "status": "valid",
+          "explanation": "Học sinh thực hiện nhân phân phối 4 vào trong ngoặc (4*x + 4*2 = 4x + 8) chính xác."
+        },
+        {
+          "index": 1,
+          "status": "original_error",
+          "explanation": "Học sinh thực hiện sai phép chuyển vế. Khi chuyển +8 từ vế trái sang vế phải, phải đổi dấu thành -8, tức là 4x = 24 - 8 = 16, nhưng học sinh lại cộng 8 vào 24."
+        },
+        {
+          "index": 2,
+          "status": "consequential",
+          "explanation": "Kết quả x = 8 là hệ quả logic từ phương trình sai 4x = 32 ở bước trước đó."
+        }
+      ],
+      "errorCategory": "Sai quy tắc chuyển vế",
+      "hints": [
+        "Con hãy kiểm tra lại thao tác chuyển vế số 8 từ vế trái sang vế phải, liệu dấu của nó có cần thay đổi không nhỉ?",
+        "Theo quy tắc chuyển vế, khi ta chuyển một số hạng từ vế này sang vế kia của phương trình, ta phải đổi dấu số hạng đó (cộng thành trừ, trừ thành cộng).",
+        "Hãy thử tính lại 24 trừ đi 8 trước khi chia cho 4 nhé, con sẽ tìm ra giá trị x chính xác đấy!"
+      ],
+      "verificationStatus": "verified",
+      "verificationNotes": [
+        "Bộ kiểm chứng đại số độc lập xác nhận nghiệm đúng của phương trình gốc là x = 4.",
+        "Tập nghiệm bị thay đổi tại Bước 2 (nghiệm biến thành 8)."
+      ],
+      "studentMessage": "Chào con! Cách con trình bày các bước rất rõ ràng và mạch lạc. Tuy nhiên, có một chút nhầm lẫn nhỏ ở bước chuyển vế thôi. Con hãy bình tĩnh kiểm tra lại quy tắc đổi dấu nhé, thầy tin là con sẽ sửa được ngay thôi!"
+    }
+  },
+  {
+    "id": "TC-15",
+    "group": "D",
+    "name": "Lỗi bỏ ngoặc bước 1 kéo theo thu gọn bước 2",
+    "problemText": "Rút gọn 7 - (3x - 4)",
+    "steps": [
+      "7 - 3x - 4",
+      "3 - 3x"
+    ],
+    "expectedFirstError": 0,
+    "statusHttp": 200,
+    "data": {
+      "status": "uncertain",
+      "firstErrorStepIndex": 0,
+      "steps": [
+        {
+          "index": 0,
+          "status": "original_error",
+          "explanation": "Khi bỏ dấu ngoặc có dấu trừ đằng trước, học sinh quên đổi dấu số hạng -4 thành +4."
+        },
+        {
+          "index": 1,
+          "status": "consequential",
+          "explanation": "Học sinh thực hiện phép tính 7 - 4 = 3 dựa trên biểu thức sai ở bước trước."
+        }
+      ],
+      "errorCategory": "Sai quy tắc bỏ dấu ngoặc",
+      "hints": [
+        "Con hãy kiểm tra lại quy tắc bỏ dấu ngoặc khi phía trước có dấu trừ nhé.",
+        "Khi bỏ dấu ngoặc có dấu trừ đằng trước, ta phải đổi dấu tất cả các số hạng bên trong ngoặc.",
+        "Thử đổi dấu của -4 thành +4 rồi thực hiện lại phép tính 7 + 4 xem kết quả là bao nhiêu nhé."
+      ],
+      "verificationStatus": "unverified",
+      "verificationNotes": [
+        "Phân tích do AI đề xuất, chưa được kiểm chứng toán học độc lập."
+      ],
+      "studentMessage": "Chào em, bài toán này rất hay gặp lỗi về dấu đấy! Em đã làm rất tốt các bước tính toán, chỉ cần chú ý một chút đến quy tắc đổi dấu khi bỏ ngoặc là sẽ hoàn thiện ngay. Cố gắng lên nhé!"
+    }
+  },
+  {
+    "id": "TC-16",
+    "group": "E",
+    "name": "Phân số và số thập phân",
+    "problemText": "2x = 7",
+    "steps": [
+      "x = 7/2",
+      "x = 3.5"
+    ],
+    "expectedFirstError": null,
+    "statusHttp": 200,
+    "data": {
+      "status": "completed",
+      "firstErrorStepIndex": null,
+      "steps": [
+        {
+          "index": 0,
+          "status": "valid",
+          "explanation": "Học sinh thực hiện phép chia cả hai vế cho 2 để tìm x, đây là bước biến đổi đúng."
+        },
+        {
+          "index": 1,
+          "status": "valid",
+          "explanation": "Học sinh chuyển đổi phân số 7/2 sang dạng số thập phân 3.5 chính xác."
+        }
+      ],
+      "errorCategory": null,
+      "hints": [
+        "Em hãy kiểm tra lại xem kết quả x = 3.5 có thỏa mãn phương trình ban đầu 2x = 7 không nhé?",
+        "Khi giải phương trình dạng ax = b, ta thực hiện phép tính x = b/a. Em đã áp dụng đúng quy tắc này chưa?",
+        "Các bước tính toán của em đều rất chính xác, em có thể tự tin với kết quả này!"
+      ],
+      "verificationStatus": "verified",
+      "verificationNotes": [
+        "Bộ kiểm chứng đại số độc lập xác nhận nghiệm đúng của phương trình gốc là x = 3.5.",
+        "Tập nghiệm bị thay đổi tại Bước 1 (nghiệm biến thành 7)."
+      ],
+      "studentMessage": "Chào em, bài làm của em rất xuất sắc và chính xác! Cách trình bày của em rất rõ ràng và logic. Hãy tiếp tục giữ vững phong độ học tập tuyệt vời này nhé!"
+    }
+  },
+  {
+    "id": "TC-17",
+    "group": "E",
+    "name": "Chia trước khi phá ngoặc",
+    "problemText": "2(x + 3) = 14",
+    "steps": [
+      "x + 3 = 7",
+      "x = 4"
+    ],
+    "expectedFirstError": null,
+    "statusHttp": 504,
+    "data": {
+      "error": "Thời gian phân tích quá lâu (hết thời gian chờ). Vui lòng thử lại với đề bài ngắn gọn hơn."
+    }
+  },
+  {
+    "id": "TC-18",
+    "group": "E",
+    "name": "Đổi thứ tự hạng tử vế trái",
+    "problemText": "4 - 2x = 10",
+    "steps": [
+      "-2x + 4 = 10",
+      "-2x = 6",
+      "x = -3"
+    ],
+    "expectedFirstError": null,
+    "statusHttp": 504,
+    "data": {
+      "error": "Thời gian phân tích quá lâu (hết thời gian chờ). Vui lòng thử lại với đề bài ngắn gọn hơn."
+    }
+  },
+  {
+    "id": "TC-19",
+    "group": "F",
+    "name": "Phương trình bậc hai",
+    "problemText": "x^2 - 5x + 6 = 0",
+    "steps": [
+      "(x - 2)(x - 3) = 0",
+      "x = 2 hoặc x = 3"
+    ],
+    "expectedFirstError": null,
+    "statusHttp": 200,
+    "data": {
+      "status": "completed",
+      "firstErrorStepIndex": null,
+      "steps": [
+        {
+          "index": 0,
+          "status": "valid",
+          "explanation": "Học sinh đã phân tích đa thức thành nhân tử đúng bằng phương pháp tách hạng tử -5x thành -2x - 3x."
+        },
+        {
+          "index": 1,
+          "status": "valid",
+          "explanation": "Học sinh áp dụng đúng tính chất của phương trình tích: A.B = 0 khi A = 0 hoặc B = 0."
+        }
+      ],
+      "errorCategory": null,
+      "hints": [
+        "Em hãy thử thay giá trị x = 2 và x = 3 vào phương trình ban đầu xem có thỏa mãn không nhé?",
+        "Khi phương trình có dạng (x - a)(x - b) = 0, ta có thể suy ra điều gì về từng nhân tử?",
+        "Cách giải của em đã rất chính xác, em có thể thử kiểm tra lại bằng cách khai triển ngược lại biểu thức (x - 2)(x - 3) xem có ra đúng x^2 - 5x + 6 không nhé."
+      ],
+      "verificationStatus": "unverified",
+      "verificationNotes": [
+        "Phân tích do AI đề xuất, chưa được kiểm chứng toán học độc lập."
+      ],
+      "studentMessage": "Chào em, bài làm của em hoàn toàn chính xác rồi! Em đã nắm rất vững phương pháp giải phương trình bậc hai bằng cách phân tích thành nhân tử. Tiếp tục phát huy tinh thần học tập này nhé!"
+    }
+  },
+  {
+    "id": "TC-20",
+    "group": "F",
+    "name": "Tích phân hàm lượng giác",
+    "problemText": "int_0^pi sin(x) dx = 2",
+    "steps": [
+      "-cos(pi) - (-cos(0)) = 2",
+      "1 - (-1) = 2"
+    ],
+    "expectedFirstError": null,
+    "statusHttp": 200,
+    "data": {
+      "status": "completed",
+      "firstErrorStepIndex": null,
+      "steps": [
+        {
+          "index": 0,
+          "status": "valid",
+          "explanation": "Học sinh đã áp dụng đúng công thức Newton-Leibniz: nguyên hàm của sin(x) là -cos(x), cận từ 0 đến pi."
+        },
+        {
+          "index": 1,
+          "status": "valid",
+          "explanation": "Học sinh thay giá trị lượng giác chính xác: cos(pi) = -1 và cos(0) = 1, dẫn đến -(-1) - (-1) = 1 + 1 = 2."
+        }
+      ],
+      "errorCategory": null,
+      "hints": [
+        "Em hãy kiểm tra lại xem các giá trị lượng giác tại các điểm đặc biệt đã được thay thế chính xác chưa nhé?",
+        "Nhắc lại quy tắc: cos(pi) bằng bao nhiêu và cos(0) bằng bao nhiêu nhỉ?",
+        "Hãy thử tính lại giá trị của biểu thức -cos(pi) - (-cos(0)) một cách cẩn thận từng bước một."
+      ],
+      "verificationStatus": "unverified",
+      "verificationNotes": [
+        "Phân tích do AI đề xuất, chưa được kiểm chứng toán học độc lập."
+      ],
+      "studentMessage": "Chào em, bài làm của em rất xuất sắc và chính xác! Em đã nắm vững kiến thức về tích phân lượng giác rồi đấy. Hãy tiếp tục giữ vững phong độ này nhé!"
+    }
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "name": "AI MATH TUTOR",
+  "description": "Ứng dụng giúp học sinh THCS nhận diện lỗi sai trong quá trình giải Toán, hiểu nguyên nhân và tự sửa lỗi thông qua các câu hỏi gợi mở.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
